@@ -2,6 +2,7 @@ const mongoose= require("mongoose");
 const express = require("express");
 const app = express();
 var cookieParser = require('cookie-parser');
+const port = process.env.PORT || 8000;
 
 // //Middleware
 // const middleware = (req,res,next) =>{
@@ -18,6 +19,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(require('./router/auth'));
 
-app.listen(5000,()=>{
-    console.log("Server is running");
+app.listen(port,()=>{
+    console.log(`${port} connected`);
 })
