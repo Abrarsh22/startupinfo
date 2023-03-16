@@ -4,8 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "build" : "npm i"
+    "dev": "npm run app.js",
+    "build" : "npm i",
+    "start" : "node app.js",
+    "server":"nodemon app.js"
   },
   "keywords": [],
   "author": "",
