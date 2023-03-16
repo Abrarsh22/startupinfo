@@ -2,7 +2,7 @@ const mongoose= require("mongoose");
 const express = require("express");
 const app = express();
 var cookieParser = require('cookie-parser');
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 
 // //Middleware
 // const middleware = (req,res,next) =>{
